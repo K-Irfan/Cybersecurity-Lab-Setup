@@ -24,7 +24,7 @@ The objective is to establish an isolated virtual subnet capable of hosting both
 - Configured a dedicated **NAT Network** named `NatNetwork` with IPv4 prefix `10.0.0.0/24`.
 - Enabled internal DHCP service for scalable lab target integration.
 
-![NAT Network Configuration](Screenshots/nat-network.png)
+![NAT Network Configuration](<Screenshots for KaliVM/nat-network.png>)
 
 ### 2. Attacking Machine Deployment
 - Imported the pre-built Kali Linux 64-bit appliance into VirtualBox.
@@ -32,7 +32,7 @@ The objective is to establish an isolated virtual subnet capable of hosting both
 - Configured bidirectional clipboard sharing and drag-and-drop.
 - Configured host-guest shared folders for secure file transfer.
 
-![Kali Linux Desktop](Screenshots/kali-desktop.png)
+![Kali Linux Desktop](<Screenshots for KaliVM/kali-desktop.png>)
 
 ### 3. Static IP Configuration & Routing
 - Assigned Kali Linux a static configuration (`10.0.0.10/24`) to avoid reserved address conflicts with the VirtualBox gateway and internal services.
@@ -50,14 +50,14 @@ ping -c 3 1.1.1.1
 ping -c 3 google.com
 ```
 
-![Verifying IP address](Screenshots/network-test-1.png)
-![Testing internet routing](Screenshots/network-test-2.png)
+![Verifying IP address](<Screenshots for KaliVM/network-test-1.png>)
+![Testing internet routing](<Screenshots for KaliVM/network-test-2.png>)
 
 ### 4. Baseline Recovery Snapshot
 - Captured an initial, clean-state snapshot (`Snapshot 1`) before running exploits or installing tools.
 - Enables instant rollback and deterministic lab testing.
 
-![Baseline Snapshot](Screenshots/snapshot.png)
+![Baseline Snapshot](<Screenshots for KaliVM/snapshot.png>)
 
 ---
 
@@ -73,7 +73,7 @@ ping -c 3 google.com
   * **Primary DNS:** `8.8.8.8`
 - Added explicit default gateway route entries (`ip route add default via 10.0.0.1 dev wlan0`) to ensure routing table persistence.
 
-![Android Installation](Screenshots/installation.png)
+![Android Installation](<Screenshots for AndroidVM/installation.png>)
 
 ### 2. Dual-Node Verification & Connectivity Test
 Confirmed cross-node connectivity across the isolated subnet as well as external internet access:
@@ -87,8 +87,8 @@ ping -c 3 8.8.8.8       # Outbound Internet Reachability
 ping -c 3 10.0.0.9      # Reachability to Android Target
 ```
 
-![Bilateral Network Verification - Android to Kali](Screenshots/android%20to%20kali.png)
-![Bilateral Network Verification - Kali to Android](Screenshots/kali%20to%20android.png)
+![Bilateral Network Verification - Android to Kali](<Screenshots for AndroidVM/android to kali.png>)
+![Bilateral Network Verification - Kali to Android](<Screenshots for AndroidVM/kali to android.png>)
 
 ---
 
