@@ -65,6 +65,10 @@ ping -c 3 google.com
 
 ### 1. Target Deployment & Network Configuration
 - Deployed an **Android-x86 9.0 (r2)** virtual appliance attached to the shared `NatNetwork` (`10.0.0.0/24`).
+
+![Android Installation](<Screenshots for AndroidVM/installation.png>)
+![Android Homepage](<Screenshots for AndroidVM/android-homepage.png>)
+
 - Partitioned a dedicated 10 GB virtual drive formatted with `ext4` and installed legacy GRUB for full state persistence.
 - Assigned a static IP configuration to interface `wlan0`:
   * **IP Address:** `10.0.0.9`
@@ -72,9 +76,6 @@ ping -c 3 google.com
   * **Gateway:** `10.0.0.1`
   * **Primary DNS:** `8.8.8.8`
 - Added explicit default gateway route entries (`ip route add default via 10.0.0.1 dev wlan0`) to ensure routing table persistence.
-
-![Android Installation](<Screenshots for AndroidVM/installation.png>)
-![Android Homepage](<Screenshots for AndroidVM/android-homepage.png>)
 
 ### 2. Dual-Node Verification & Connectivity Test
 Confirmed cross-node connectivity across the isolated subnet as well as external internet access:
