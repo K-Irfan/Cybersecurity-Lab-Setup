@@ -96,7 +96,7 @@ ping -c 3 10.0.0.9      # Reachability to Android Target
 - Captured an initial, clean-state snapshot (`Snapshot 1 - clean lab setup`) before running exploits or installing tools.
 - Enables instant rollback and deterministic lab testing.
 
-![Baseline Snapshot](<Screenshots for AndroidVM/android-snapshot.png>)
+![Baseline Snapshot](<Screenshots for AndroidVM/android snapshot.png>)
 
 ---
 
