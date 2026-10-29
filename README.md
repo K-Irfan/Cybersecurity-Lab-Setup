@@ -27,7 +27,7 @@ The objective is to establish an isolated virtual network environment capable of
 - Configured a dedicated **NAT Network** named `NatNetwork` with IPv4 prefix `10.0.0.0/24`.
 - Enabled internal DHCP service for scalable lab target integration.
 
-![NAT Network Configuration](screenshots/01-nat-network.png)
+![NAT Network Configuration](Screenshots/nat-network.png)
 
 ### 2. Attacking Machine Deployment (Kali Linux)
 - Imported the pre-built Kali Linux 64-bit appliance into VirtualBox.
@@ -35,7 +35,7 @@ The objective is to establish an isolated virtual network environment capable of
 - Configured bidirectional clipboard sharing and drag-and-drop.
 - Configured host-guest shared folders for secure file transfer.
 
-![Kali Linux Desktop](screenshots/02-kali-desktop.png)
+![Kali Linux Desktop](Screenshots/kali-desktop.png)
 
 ### 3. Static IP Configuration & Routing
 - Assigned Kali Linux a static configuration (`10.0.0.10/24`) to avoid reserved address conflicts with the VirtualBox gateway and internal services.
@@ -52,9 +52,11 @@ ping -c 3 10.0.0.1
 ping -c 3 1.1.1.1
 ping -c 3 google.com
 ```
+![Verifying IP address](Screenshots/network-test-1.png)
+![Testing internet routing](Screenshots/network-test-2.png)
 
 ### 4. Baseline Recovery Snapshot
 - Captured an initial, clean-state snapshot (`Snapshot 1`) before installing tools or running exploits.
 - Enables instant rollback and deterministic lab testing.
 
-![Baseline Snapshot](screenshots/04-snapshot.png)
+![Baseline Snapshot](Screenshots/snapshot.png)
