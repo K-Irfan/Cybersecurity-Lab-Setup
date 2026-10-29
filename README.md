@@ -74,6 +74,7 @@ ping -c 3 google.com
 - Added explicit default gateway route entries (`ip route add default via 10.0.0.1 dev wlan0`) to ensure routing table persistence.
 
 ![Android Installation](<Screenshots for AndroidVM/installation.png>)
+![Android Homepage](<Screenshots for AndroidVM/android-homepage.png>)
 
 ### 2. Dual-Node Verification & Connectivity Test
 Confirmed cross-node connectivity across the isolated subnet as well as external internet access:
@@ -89,6 +90,12 @@ ping -c 3 10.0.0.9      # Reachability to Android Target
 
 ![Bilateral Network Verification - Android to Kali](<Screenshots for AndroidVM/android to kali.png>)
 ![Bilateral Network Verification - Kali to Android](<Screenshots for AndroidVM/kali to android.png>)
+
+### 3. Baseline Recovery Snapshot
+- Captured an initial, clean-state snapshot (`Snapshot 1 - clean lab setup`) before running exploits or installing tools.
+- Enables instant rollback and deterministic lab testing.
+
+![Baseline Snapshot](<Screenshots for AndroidVM/android-snapshot.png>)
 
 ---
 
