@@ -104,7 +104,7 @@ ping -c 3 10.0.0.9      # Reachability to Android Target
 ### 1. Target Deployment & Network Configuration
 - Deployed a **Windows 10 (64-bit)** virtual machine with 4 GB RAM and a 40 GB dynamically allocated VDI drive attached to `NatNetwork` (`10.0.0.0/24`).
 
-![Desktop](<Screenshots for AndroidVM/android-homepage.png>)
+![Desktop](<Screenshots for WindowsVM/windows desktop.png>)
  
 - Configured a static IPv4 address via Network Adapter settings (`ncpa.cpl`):
   * **IP Address:** `10.0.0.11`
@@ -128,8 +128,14 @@ ping 8.8.8.8            :: Outbound Internet Reachability
 ping -c 3 10.0.0.11     # Reachability to Windows 10 Target
 ```
 
-![Bilateral Network Verification - Windows to Kali](<Screenshots/windows to kali.png>)
-![Bilateral Network Verification - Kali to Windows](<Screenshots/kali to windows.png>)
+![Bilateral Network Verification - Windows to Kali](<Screenshots for WindowsVM/windows to kali.png>)
+![Bilateral Network Verification - Kali to Windows](<Screenshots for WindowsVM/kali to windows.png>)
+
+### 3. Baseline Recovery Snapshot
+- Captured an initial, clean-state snapshot (`Snapshot 1 - clean lab setup`) before running exploits or installing tools.
+- Enables instant rollback and deterministic lab testing.
+
+![Baseline Snapshot](<Screenshots for WindowsVM/windows snapshot.png>)
 
 ---
 
