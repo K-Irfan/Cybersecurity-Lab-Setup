@@ -1,4 +1,4 @@
-# Cybersecurity Testing Lab Setup (Week 1 - Task WK1-PM1 & WK1-PMx)
+# Cybersecurity Testing Lab Setup (Week 1 - LinuxVM, AndroidVM, WindowsVM)
 
 ## Overview
 This repository documents the deployment, configuration, and verification of an isolated virtual cybersecurity testing lab built with Oracle VirtualBox as part of the NetworkWalks Academy Cybersecurity Internship program.
@@ -61,7 +61,7 @@ ping -c 3 google.com
 
 ---
 
-## Part 2: Target Integration & Verification (Android-x86)
+## Part 2: Target Integration 1 - Android
 
 ### 1. Target Deployment & Network Configuration
 - Deployed an **Android-x86 9.0 (r2)** virtual appliance attached to the shared `NatNetwork` (`10.0.0.0/24`).
