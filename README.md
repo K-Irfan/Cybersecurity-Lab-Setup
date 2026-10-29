@@ -87,8 +87,8 @@ ping -c 3 8.8.8.8       # Outbound Internet Reachability
 ping -c 3 10.0.0.9      # Reachability to Android Target
 ```
 
-![Bilateral Network Verification - Android to Kali](Screenshots/android_to_kali.png)
-![Bilateral Network Verification - Kali to Android](Screenshots/kali_to_android.png)
+![Bilateral Network Verification - Android to Kali](Screenshots/android%20to%20kali.png)
+![Bilateral Network Verification - Kali to Android](Screenshots/kali%20to%20android.png)
 
 ---
 
