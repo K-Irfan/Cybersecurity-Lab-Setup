@@ -83,7 +83,6 @@ Confirmed cross-node connectivity across the isolated subnet as well as external
 ```bash
 # From Android Terminal:
 ping -c 3 10.0.0.10     # Reachability to Kali Attacker
-ping -c 3 8.8.8.8       # Outbound Internet Reachability
 
 # From Kali Terminal:
 ping -c 3 10.0.0.9      # Reachability to Android Target
